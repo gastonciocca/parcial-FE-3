@@ -35,7 +35,7 @@ function App() {
       <h1>Carga de estudiante</h1>
       <Formulario handleSubmit={handleSubmit}  setEstudiante={setEstudiante}/>
       {show ?  <Card estudiante={estudiante} /> : null}
-      {mensajeError && <p>{mensajeError}</p>}
+      {mensajeError && <p style={{color:'red'}}>{mensajeError}</p>}
 
      
     </div>
